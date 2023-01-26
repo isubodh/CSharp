@@ -4,13 +4,13 @@ using AbstractFactory;
 
 Console.WriteLine("Hello, World!");
 
-var  ukShippingCartPurchaseFactory = new UKShippingCartPurchaseFactory();
-var  usShippingCartPurchaseFactory = new USShippingCartPurchaseFactory();
+var  ukShoppingCartPurchaseFactory = new UKShoppingCartPurchaseFactory();
+var  usShoppingCartPurchaseFactory = new USShoppingCartPurchaseFactory();
 
 
 var shoppingCarts = new List<ShoppingCart>(){
-    new ShoppingCart(ukShippingCartPurchaseFactory, 200),
-    new ShoppingCart(usShippingCartPurchaseFactory, 500)
+    new ShoppingCart(ukShoppingCartPurchaseFactory, 200),
+    new ShoppingCart(usShoppingCartPurchaseFactory, 500)
 };
 
 foreach(var shoppingCart in shoppingCarts ){

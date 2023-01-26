@@ -5,7 +5,7 @@ namespace AbstractFactory {
         IShippingCostService createShippingCostService();
     }
 
-    public class UKShippingCartPurchaseFactory : IShoppingCartPurchaseFactory {
+    public class UKShoppingCartPurchaseFactory : IShoppingCartPurchaseFactory {
         public IDiscountService createDiscountService() {
             return new UKDicountService();
         }
@@ -15,7 +15,7 @@ namespace AbstractFactory {
         }
     }
 
-    public class USShippingCartPurchaseFactory : IShoppingCartPurchaseFactory {
+    public class USShoppingCartPurchaseFactory : IShoppingCartPurchaseFactory {
         public IDiscountService createDiscountService() {
             return new USDiscountService();
         }
