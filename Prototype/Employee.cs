@@ -19,7 +19,7 @@ namespace prototype {
             if (isDeepClone){
                 var settings = new JsonSerializerSettings {TypeNameHandling = TypeNameHandling.All};
                 var JsonObject = JsonConvert.SerializeObject(this, typeof(Employee), settings);
-                 return JsonConvert.DeserializeObject<Person>(JsonObject, settings);
+                return JsonConvert.DeserializeObject<Person>(JsonObject, settings);
             } 
                 return (Person)MemberwiseClone();
             
