@@ -12,11 +12,11 @@ namespace Flyweight{
 
             switch (charIdentifier){
                 case 'a' :
-                    _chars[charIdentifier] = new Flyweight.CharA();
+                    _chars[charIdentifier] = new CharA();
                     return _chars[charIdentifier];
 
                 case 'b' :
-                    _chars[charIdentifier] = new Flyweight.CharB();
+                    _chars[charIdentifier] = new CharB();
                     return _chars[charIdentifier];
             }
             return null;
